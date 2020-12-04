@@ -1,0 +1,76 @@
+.bottom-bar{
+    width: auto !important;
+    padding-right: 40px !important;
+}
+
+
+
+.remote-dialog-overlay{
+    position: fixed;
+    background:rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.remote-dialog-overlay.visible{
+    display: flex;
+}
+
+.remote-dialog-overlay--inner{
+    width: 600px;
+    min-height: 300px;
+    background: #FFF;
+    -webkit-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.01);
+    -moz-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.01);
+    box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.01);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.remote-dialog-overlay--inner--close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    line-height: 15px;
+    font-size: 20px;
+}
+.remote-dialog-overlay--inner--close:hover{
+    background: rgba(0,0,0,1);
+}
+.remote-dialog-overlay--inner p{
+    font-size: 16px;
+    margin: 5px;
+    font-weight: 600;
+}
+.remote-dialog-overlay--inner p.underline{
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.remote-dialog-overlay--inner p.underline a{
+    color: #000;
+}
+.remote-dialog-overlay--inner .code{
+    font-size: 90px;
+    line-height: 80px;
+    margin-top: 20px;
+}
